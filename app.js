@@ -6,13 +6,21 @@ function selectImage(imagePath, image) {
     image.classList.add('selected');
 }
 
-function selectButton(buttonId) {
+var qty = 1.5;
+var price;
+function selectButton(buttonId, quantity) {
+    console.log(qty);
     const buttons = document.getElementsByTagName('button');
     for (const button of buttons) {
         button.classList.remove('selectedButton');
     }
     const selectedButton = document.getElementById(buttonId);
     selectedButton.classList.add('selectedButton');
+
+    var totalPrice = 500 * quantity *currentValue;
+    qty = quantity;
+    price = totalPrice;
+    document.getElementById('price').textContent = totalPrice;
 }
 
 var currentValue = 1;
@@ -20,8 +28,12 @@ function updateCounter() {
     document.getElementById('counter').innerText = currentValue;
 }
 function increase() {
+    console.log(qty);
     currentValue++;
     updateCounter();
+
+    var totalPrice = qty * currentValue * 500;
+    document.getElementById('price').textContent = totalPrice;
 }
 
 function decrease() {
@@ -29,6 +41,8 @@ function decrease() {
         currentValue--;
         updateCounter();
     }
+    var totalPrice = qty * currentValue *500;
+    document.getElementById('price').textContent = totalPrice;
 }
 
 function backToList() {
