@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="./app.css">
+    <script src="./app.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!---Left Side-->
+        <div class="left-side">
+            <div>
+                <a onclick="backToList()"><svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l6 6m-6-6l6-6"/></svg>  back to list</a>
+                <img id="selected-image" alt="Selected Image" src="./cat_food_1.png">
+            </div>
+        </div>
+        <!---Right Side-->
+        <div class="right-side">
+            <span class="hotsale">HOTSALE</span>
+            <h1>Whiskas @ Dry Adult Dewasa 7+, Cat food Rasa Mackere</h1>
+            <!---review-->
+            <p><span style="color:rgb(120, 230, 120);">CAT FOOD</span> | <svg class="star"
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#ffe234"
+                        d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z" />
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#ffe234"
+                        d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z" />
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#ffe234"
+                        d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z" />
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#ffe234"
+                        d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z" />
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#ffe234"
+                        d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z" />
+                </svg>
+                4.9(2130 reviews)
+            </p>
+            <!---description-->
+            <h5>Description:</h5>
+            <ul>
+                <li>Makanan yang lengkap dan seimbang. dengan 41 nutrisi penting.</li>
+                <li>Mengandung antioksidan (vitamin E dan selenium) untuk sistem kekebalan tubuh yang sehat.</li>
+                <li>Mengandung serat untuk memperlancer pencernaan dan meningkatkan kesehatan usus.</li>
+                <li>Diperkaya dengan kalsium, fosfor dan vitamin D untuk tulang yang sehat</li>
+            </ul>
+            <!---images-->
+            <div class="row">
+                <img src="./cat_food_1.png" alt="cat-food" class="small-img image selected"
+                    onclick="selectImage('./cat_food_1.png', this)">
+                <img src="./cat_food_2.png" alt="cat-food" class="small-img image"
+                    onclick="selectImage('./cat_food_2.png', this)">
+                <img src="./cat_food_1.png" alt="cat-food" class="small-img image"
+                    onclick="selectImage('./cat_food_1.png', this)">
+            </div>
+            <!---size-->
+            <h5>Size:</h5>
+            <div class="row">
+                <button id="button1" class="selectedButton" onclick="selectButton('button1')" >1.5 kg</button>
+                <button id="button2" onclick="selectButton('button2')">1 kg</button>
+                <button id="button3" onclick="selectButton('button3')">500 gm</button>
+                <button id="button4" onclick="selectButton('button4')">250 gm</button>
+            </div>
+            <!---ingredients-->
+            <h5>Ingredients:</h5>
+            <ul>
+                <li>Nutrisi</li>
+                <li>Vitamin E</li>
+                <li>Vitamin D</li>
+                <li>Nutrisi</li>
+                <li>Vitamin E</li>
+                <li>Vitamin D</li>
+            </ul>
+        </div>
+    </div>
+    <!----Qty & cart section-->
+    <div class="card-section">
+        <div class="row">
+            <!---left side-->
+            <div class="left">
+                <div class="row">
+                    <img src="./cat_food_1.png" alt="cat-food" class="small-img" style="margin-left: 20px;">
+                    <div style="margin-left: 20px;">
+                        <p><b>Whiskas @ Dry Adult Dewasa 7+, Cat food Rasa Mackere</b> </p>
+                        <span style="color:rgb(120, 230, 120);">CAT FOOD</span>
+                    </div>
+                </div>
+            </div>
+            <!--right side-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <!---qty-->
+                        <div class="col-6 quantity">
+                            <div class="row qty-section">Qty: &nbsp;&nbsp;&nbsp;<a onclick="decrease()"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#0d6efd"
+                                            d="M19 19V5H5v14zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-2 8v2H7v-2z" />
+                                    </svg></a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="qty" id="counter">1</div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a onclick="increase()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#0d6efd"
+                                            d="M19 19V5H5v14zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-8 4h2v4h4v2h-4v4h-2v-4H7v-2h4z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <!--cart btn-->
+                        <div class="col-6 position">
+                            <button class="cart-btn" onclick="addToCart()">ADD TO CARD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

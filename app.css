@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    /* height: 100vh;  */
+}
+
+.left-side {
+    flex: 1; 
+    background-color: #ddd;
+    padding: 20px;
+}
+.left{
+    width: 50%;
+}
+
+.right-side {
+    flex: 1; 
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.back-button {
+    cursor: pointer;
+    font-size: 12px;
+    color: #333;
+}
+.cart-btn{
+    color: #fff;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 35px 15px 35px;
+    font-weight: bold;
+}
+.card-section{
+    height: 75px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px ;
+    position: fixed;
+    bottom: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.row{
+    display: flex;
+}
+.qty{
+    height: 25px;
+    width: 25px;
+    border: 5px solid #8a88884d;
+    border-radius: 10px;
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+.qty-section{
+    width: 200px;
+}
+a{
+    cursor: pointer;
+}
+
+.col-6{
+    width: 50%;
+}
+.col-3{
+    width: 25%;
+}
+.col-9{
+    width: 75%;
+}
+.col-12{
+    width: 100%;
+}
+.position{
+    position: relative;
+    left: 250px;
+    top: 10px;
+}
+.quantity{
+    margin-top: 25px;
+    margin-left: 50px;font-weight: bold;
+    color: #686767;
+}
+.hotsale{
+    background-color: rgb(224, 108, 108);
+    color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.image {
+    border: 2px solid transparent;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .image.selected {
+    border: 5px solid #787b7e28;
+    padding: 5px;
+    border-radius: 12px;
+    max-height: 120px;
+    max-width: 60px;
+  }
+
+  .small-img{
+    max-height: 80px;
+}
+
+  button {
+    padding: 10px;
+    margin: 5px; 
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    background-color: #b8b1b14b;
+  }
+  
+  .selectedButton {
+    background-color: #0d6efd;
+    color: #fff; 
+    border: 2px solid #0d6efd;
+    border-radius: 12px;
+  }
+  .star{
+    position: relative;
+    top: 7px;
+  }
+  #selected-image {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+ 
+  
